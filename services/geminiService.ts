@@ -2,7 +2,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { FullWeatherData } from '../types';
 
 // FIX: Per guidelines, assume API_KEY is always available in the environment.
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: process.env.VITE_API_KEY });
 
 const weatherSchema = {
   type: Type.OBJECT,
